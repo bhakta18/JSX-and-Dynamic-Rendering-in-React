@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsx and babel</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        const element = <p>seize th day</p>;
+        ReactDom.render(element, document.getElementById('root'));
+
+        const message = "seize th day"
+        const element1 = <p>{message}</p>
+
+        ReactDom.render(element1,document.getElementById('root'));
+
+        const isSeizedDay = true;
+        const element3 = isSeizedD ? <p>Seize the day </p> : <p>Carpe Diem</p>;
+        ReactDom.render(element3,document.getElementById('root'));
+
+
+
+    </script>
+    
+</body>
+</html>
